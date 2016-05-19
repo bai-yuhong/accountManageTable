@@ -264,12 +264,12 @@
                 type:$("#pop1 table").find("select.type").val()
             });
             $("#pop1 table").find("input.id").val("");
-            name:$("#pop1 table").find("input.name").val("");
-            note:$("#pop1 input.note").val("");
-            status:$("#pop1 table").find("input.note").val("");
-            signTime:$("#pop1 table").find("input.signTime").val("");
-            lastTime:$("#pop2 table").find("input.lastTime").val("");
-            type:$("#pop2 table").find("select.type").val("");
+            $("#pop1 table").find("input.name").val("");
+            $("#pop1 input.note").val("");
+            $("#pop1 table").find("input.note").val("");
+            $("#pop1 table").find("input.signTime").val("");
+            $("#pop2 table").find("input.lastTime").val("");
+            $("#pop2 table").find("select.type").val("");
             table.clear();
             $("#mask").hide();
             $("#pop1").hide();
@@ -281,6 +281,13 @@
     $("#pop1 input.cancel1").click(function(){
         $("#mask").hide();
         $("#pop1").hide();
+        $("#pop1 table").find("input.id").val("");
+            $("#pop1 table").find("input.name").val("");
+            $("#pop1 input.note").val("");
+            $("#pop1 table").find("input.note").val("");
+            $("#pop1 table").find("input.signTime").val("");
+            $("#pop2 table").find("input.lastTime").val("");
+            $("#pop2 table").find("select.type").val("");
         return false;
     });
     //更新数据
